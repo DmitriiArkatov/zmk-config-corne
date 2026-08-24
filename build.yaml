@@ -54,25 +54,6 @@
 ---
 include:
 
-    ### DEBUG: corne_left with USB logging ###
-  - board: nice_nano_v2
-    shield: corne_left
-    snippet: zmk-usb-logging
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Debug\"
-    artifact-name: nice_corne_left_debug
-    ### DEBUG END ###
-
-    ### RC-clock variant (for ProMicro52840 clones without 32kHz crystal) ###
-  - board: nice_nano_v2
-    shield: corne_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_RC\" -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
-    artifact-name: nice_corne_left_rc
-  - board: nice_nano_v2
-    shield: corne_right
-    cmake-args: -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y
-    artifact-name: nice_corne_right_rc
-    ### RC-clock variant END ###
-
     ### CORNE no display START ###
   - board: nice_nano_v2
     shield: corne_left
