@@ -54,6 +54,16 @@
 ---
 include:
 
+    ### CORNE no display START ###
+  - board: nice_nano_v2
+    shield: corne_left
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne\"
+    artifact-name: nice_corne_left
+  - board: nice_nano_v2
+    shield: corne_right
+    artifact-name: nice_corne_right
+    ### CORNE no display END ###
+
   ### CORNE START ###
     ### nice_view START ###
     # nice_nano_v2 + nice_epaper
